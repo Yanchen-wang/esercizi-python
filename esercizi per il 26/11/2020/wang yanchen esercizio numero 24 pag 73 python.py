@@ -1,7 +1,13 @@
-voti1 = int(input("quanti voti ha ottemuto il candato x?"))
-voti2 = int(input("quanti voti ha ottemuto il candato y?"))
-print("il candidato x ha ottenuto il ",voti1/(voti1+voti2)*100,"% dei voti")
-print("il candidato y ha ottenuto il ",voti2/(voti1+voti2)*100,"% dei voti")
+while True:
+    try:
+        voti1 = int(input("quanti voti ha ottemuto il candato x?"))
+        voti2 = int(input("quanti voti ha ottemuto il candato y?"))
+        print("il candidato x ha ottenuto il ",voti1/(voti1+voti2)*100,"% dei voti")
+        print("il candidato y ha ottenuto il ",voti2/(voti1+voti2)*100,"% dei voti")
+        break
+    except ValueError:
+        print("\nUNEXPECTED VALUE HAS BEEN INSERTED PLS ENTER A VALUE THAT CAN BE CONVERTED INTO AN INTEGER\n")
+        pass
 if voti1 > voti2:
     print("vince il candidato x")
 elif voti1 == voti2:

@@ -1,9 +1,13 @@
-x = 0
-y = 0 
-z = 0
-while x != -1:
-    print("inserire lo stipendio di ciascun dipendente in euro,inserire -1 per terminare il processo ")
-    x = int(input())
-    y += x 
-    z += 1
-print("la media degli stipendi e' di",y/z,"euro")
+stipendo_individuo = 0
+somma_stipendenti = 0 
+numero_dipendenti = 0
+while stipendo_individuo != -1:
+    try:
+        print("inserire lo stipendio di ciascun dipendente in euro,inserire -1 per terminare il processo ")
+        stipendo_individuo = int(input())
+        somma_stipendenti += stipendo_individuo
+        numero_dipendenti += 1
+    except ValueError:
+        print("\nUNEXPECTED VALUE HAS BEEN INSERTED PLS ENTER A VALUE THAT CAN BE CONVERTED INTO AN INTEGER\n")
+        pass
+print("la media degli stipendi e' di",somma_stipendenti/numero_dipendenti,"euro")
