@@ -1,3 +1,8 @@
+'''
+A un concorso pubblico hanno partecipato due candidati di cui si conoscono i nomi
+e i punteggi conseguiti. Visualizza l'elenco dei due candidati prima in ordine
+alfabetico e poi in ordine di punteggio.
+'''
 listcandidati = [] 
 listvoti = []
 candidato1 = input("inserire il nome del primo candidato")

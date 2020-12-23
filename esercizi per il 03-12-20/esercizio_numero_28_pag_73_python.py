@@ -1,3 +1,7 @@
+'''
+Dato un elenco di studenti partecipanti a una gara sportiva di lancio del peso
+(nome studente, lancio)visualizza il valore del lancio del vincitore.
+'''
 n = 1
 elenco_risultati = []
 partecipante = "b"

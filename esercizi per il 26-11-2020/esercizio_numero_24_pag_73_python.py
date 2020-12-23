@@ -1,3 +1,8 @@
+'''
+Alla fine della giornata di elezioni per il ballottaggio tra due candidati, si
+acquisiscono i voti ottenuti dai due candidati. Scrivi il programma che calcoli
+le percentuali ottenute da ciascun candidato e comunichi il nome del vincitore.
+'''
 while True:
     try:
         voti1 = int(input("quanti voti ha ottemuto il candato x?"))
