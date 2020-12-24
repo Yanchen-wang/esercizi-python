@@ -1,6 +1,6 @@
 '''
-Scrivi un programma a cui viene passata una parola e riconosce se si tratta di un
-palindromo (parole che si leggono uguali anche al contrario) oppure meno.
+Scrivi un programma a cui viene passata una parola e riconosce se si tratta di un palindromo (parole che si leggono uguali
+anche al contrario) oppure meno.
 '''
 parola = input("inserire una parola")
 alorap = parola[::-1]

@@ -1,7 +1,6 @@
 '''
-Scrivi una programma che data in ingresso una lista A contenente n parole, 
-restituisca in output una lista B di interi che rappresentano la lunghezza 
-delle parole contenute in A. 
+Scrivi una programma che data in ingresso una lista A contenente n parole, restituisca in output una lista B di interi 
+che rappresentano la lunghezza delle parole contenute in A. 
 '''
 parole = []
 lunghezze_parole = []

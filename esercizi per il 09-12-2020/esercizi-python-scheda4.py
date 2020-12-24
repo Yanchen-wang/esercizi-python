@@ -1,6 +1,5 @@
 '''
-Scrivi un programma che a scelta dall'utente calcoli l'area di un quadrato,
-rettangolo triangolo e cerchio.
+Scrivi un programma che a scelta dall'utente calcoli l'area di un quadrato, rettangolo triangolo e cerchio.
 '''
 normal = True
 while normal == True:
