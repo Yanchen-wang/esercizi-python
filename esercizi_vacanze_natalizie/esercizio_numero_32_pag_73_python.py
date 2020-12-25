@@ -9,11 +9,12 @@ b_______|________________|_______________|
 | != 0  |     x = 0      |   x = -(b/a)  |
 |_______|________________|_______________|
 '''
-while True:
+ciclo = "0"
+while ciclo == "0":
     try:
         print("per l'equazione ax + b = 0 :")
-        a = int(input("inserire il valore del numero a"))
-        b = int(input("inserire il valore del numero b"))
+        a = int(input("inserire il valore del numero a\n"))
+        b = int(input("inserire il valore del numero b\n"))
         if a == 0:
             if b == 0:
                 print("l'equazione e' indeterminata")
@@ -24,7 +25,7 @@ while True:
                 print("l'equazione e' impossibile")
             else:
                 print("la soluzione dell'equazione e' x =",-(b/a))
-        break
+        ciclo = input("se vuole continuare a svolgere calcoli inserire 0 se vuole fermarsi inserire qualsiasi altra cosa\n")
     except ValueError:
         print("\nE' STATO INSERITO UN VALORE INCOMPATIBILE\n")
         pass

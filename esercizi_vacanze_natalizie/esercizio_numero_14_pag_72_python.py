@@ -6,13 +6,13 @@ se il prodotto e' minore o uguale a 10. Esegui poi il programma con diverse copp
 ciclo = "0"
 while ciclo == "0":
     try:
-        a = int(input("inserire il valore del numero a"))
-        b = int(input("inserire il valore del numero b"))
+        a = int(input("inserire il valore del numero a\n"))
+        b = int(input("inserire il valore del numero b\n"))
         if a * b > 10:
             print("la differenza tra a e b e':",a - b)
         else:
             print("la somma tra a e b e':",a + b)
-        ciclo = input("se vuole continuare inserire 0 se vuole fermarsi inserire qualsiasi altro valore")
+        ciclo = input("se vuole continuare inserire 0 se vuole fermarsi inserire qualsiasi altra cosa\n")
     except ValueError:
         print("\nE' STATO INSERITO UN VALORE INCOMPATIBILE\n")
         pass
