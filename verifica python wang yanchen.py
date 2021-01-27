@@ -25,14 +25,8 @@ while True:
         area = area( base_maggiore, base_minore, altezza)
         print("l'area del trapezio e' ", area)
         perimetro = perimetro( base_maggiore, base_minore, altezza, trapezio)
-        print("il perimetro del trapezio e' ,", perimetro)
+        print("il perimetro del trapezio e'", perimetro)
         break
     except ValueError:
         print("INSERITO VALORE INCOMPATIBILE")
         pass
-
-
-    
-
-
-
