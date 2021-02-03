@@ -9,11 +9,11 @@ def crea_dizionario(lista_stati,lista_capitali):
     return dizionario_stato_capitale
 
 def main():
-    lista_stati = ["russia","stati uniti","canada","italia","francia","regno unito","spagna","turchia","iran","cina","giappone","australia","brasile","india","messico","indonesia","polonia","germania"]
+    lista_stati = ["Russia","Stati uniti","Canada","Italia","Francia","Regno unito","Spagna","Turchia","Iran","Cina","Giappone","Australia","Brasile","India","Messico","Indonesia","Polonia","Germania"]
     lista_capitali = ["Mosca","Washington DC","Ottawa","Roma","Parigi","Londra","Madrid","Ankara","Teheran","Pechino","Tokyo","Canberra","Brasilia","Nuova Delhi","Citta' del Messico","Giacarta","Varsavia","Berlino"]
     dizionario_stati_capitali = crea_dizionario(lista_stati,lista_capitali)
     while True:  
-        nome_stato = input("inserire il nome dello stato cui vuoi visualizzare il nome della capitale, inserire nulla per fermare la sessione\n").lower()
+        nome_stato = input("inserire il nome dello stato cui vuoi visualizzare il nome della capitale, inserire nulla per fermare la sessione\n").capitalize()
         if nome_stato in dizionario_stati_capitali:
             print("la capitale dello stato inserito e'",dizionario_stati_capitali[nome_stato])
         elif nome_stato == "":
