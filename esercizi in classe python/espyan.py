@@ -17,20 +17,24 @@ def main():
     }
 
     while stop == "":
+        
         try:
             n = 0
             voti = []
             nome = input("inserisci il nome dello studente\n").capitalize()
+
             while n < 3:
                 print("inserici il voto numero", n + 1 ,"di", nome)
                 voto = int(input())
-                if voto > 30:
+                if voto > 30 or voto < 18:
                     print("VOTO IMPOSSIBILE INSERITO")
                     int("paolo")
                 voti.append(voto)
                 n += 1
+
             dizionario[nome] = voti
             stop = input("se ci sono altri studenti inserire nulla, altrimenti inserire qualsiasi altra cosa")
+        
         except ValueError:
             print("\nE' STATO INSERITO UN VALORE INCOMPATIBILE\n")
             pass
@@ -42,7 +46,7 @@ def main():
         if lode.capitalize() == "Si" or "Sì":
             media += 1
         dizionario_medie[chiave] = media
-        
+
     for chiave in dizionario_medie:
         media = dizionario_medie[chiave]
         if media >= 27 and media <= 30:
@@ -53,10 +57,12 @@ def main():
             lista_nomi_c.append(chiave)
         else:
             print("la media non appartiene a nessuno degli intervalli dati")
+    
     elenco_medie[(18,23)] = lista_nomi_c
     elenco_medie[(24,26)] = lista_nomi_b
     elenco_medie[(27,30)] = lista_nomi_a
     print(elenco_medie)
+
 main()
 
 #copyright Yanchen-Wang
