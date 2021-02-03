@@ -23,15 +23,18 @@ def main():
             voti = []
             nome = input("inserisci il nome dello studente\n").capitalize()
 
-            while n < 3:
-                print("inserici il voto numero", n + 1 ,"di", nome)
+            while True:
+                print("inserici il voto numero", n + 1,"di", nome ,", o inserire 0 quando non ci sono piu' voti")
                 voto = int(input())
-                if voto > 30 or voto < 18:
-                    print("VOTO IMPOSSIBILE INSERITO")
-                    int("paolo")
+                if voto == 0 and n > 0:
+                    break
+                if voto == 0 and n == 0:
+                    int("a")
+                if voto > 30 or voto < 18 :
+                    int("a")
                 voti.append(voto)
-                n += 1
-
+                n += 1  
+            
             dizionario[nome] = voti
             stop = input("se ci sono altri studenti inserire nulla, altrimenti inserire qualsiasi altra cosa")
         
@@ -40,10 +43,11 @@ def main():
             pass
 
     for chiave in dizionario:
-        media = int((sum(dizionario[chiave])/3))
+        voti = dizionario[chiave] 
+        media = int((sum(dizionario[chiave])/(len(voti))))
         print("inserire se lo studente", chiave ,"ha preso la lode (si o no)")
         lode = input()
-        if lode.capitalize() == "Si" or "Sì":
+        if lode.capitalize() == "Si" and media < 30 or "Sì" and media < 30:
             media += 1
         dizionario_medie[chiave] = media
 
