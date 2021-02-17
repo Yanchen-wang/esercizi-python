@@ -6,9 +6,9 @@ zone = {
     "nord" : 0,
     "centro" : 0,
     "sud" : 0,
-    "isole" : 0 
+    "isole" : 0
 }
-totale = 0 
+totale = 0
 
 for x in zone:
     while True:
