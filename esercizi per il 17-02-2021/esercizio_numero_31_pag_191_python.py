@@ -19,9 +19,9 @@ for x in zone:
             break
 
         except ValueError:
-            print("INSERIRE UN VALORE VALIDO")
+            print("\nUNEXPECTED VALUE HAS BEEN INSERTED PLS ENTER A VALUE THAT CAN BE CONVERTED INTO AN INTEGER\n")
             continue
-        
+
     totale += fatturato
     zone[x] = fatturato
 
